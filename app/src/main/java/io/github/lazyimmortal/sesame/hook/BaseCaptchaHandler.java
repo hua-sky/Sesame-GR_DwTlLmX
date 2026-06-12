@@ -23,11 +23,11 @@ import io.github.lazyimmortal.sesame.util.idMap.UserIdMap;
     // 滑动参数配置
     private static final int SLIDE_START_OFFSET = 25; // 滑动起始位置偏移量（像素）
     private static final int SLIDE_END_MARGIN = 20;   // 滑动结束位置距离右侧的边距（像素）
-    private static final long SLIDE_DURATION_MIN = 80L; // 最小滑动持续时间
+    private static final long SLIDE_DURATION_MIN = 50L; // 最小滑动持续时间
     private static final long SLIDE_DURATION_MAX = 120L; // 最大滑动持续时间
     
     // 滑动后延迟检查是否成功
-    private static final long POST_SLIDE_CHECK_DELAY_MS = 80L;
+    private static final long POST_SLIDE_CHECK_DELAY_MS = 50L;
     
     // 查找滑动验证文本的 XPath
     private static final String SLIDE_VERIFY_TEXT_XPATH = "//TextView[contains(@text,'向右滑动验证')]";
