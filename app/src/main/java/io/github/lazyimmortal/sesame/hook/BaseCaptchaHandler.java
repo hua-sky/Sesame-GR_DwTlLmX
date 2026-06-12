@@ -17,17 +17,17 @@ import io.github.lazyimmortal.sesame.util.idMap.UserIdMap;
  * 验证码处理程序的基类，提供处理滑动验证码的通用逻辑。
  * 该类专门用于处理目标应用验证页面上的滑动验证码。
  */
-public abstract class BaseCaptchaHandler {
+公共 abstract class BaseCaptchaHandler {
     private static final String TAG = "CaptchaHandler";
     
     // 滑动参数配置
     private static final int SLIDE_START_OFFSET = 25; // 滑动起始位置偏移量（像素）
     private static final int SLIDE_END_MARGIN = 20;   // 滑动结束位置距离右侧的边距（像素）
-    private static final long SLIDE_DURATION_MIN = 500L; // 最小滑动持续时间
-    private static final long SLIDE_DURATION_MAX = 600L; // 最大滑动持续时间
+    private static final long SLIDE_DURATION_MIN = 80L; // 最小滑动持续时间
+    private static final long SLIDE_DURATION_MAX = 120L; // 最大滑动持续时间
     
     // 滑动后延迟检查是否成功
-    private static final long POST_SLIDE_CHECK_DELAY_MS = 500L;
+    private static final long POST_SLIDE_CHECK_DELAY_MS = 80L;
     
     // 查找滑动验证文本的 XPath
     private static final String SLIDE_VERIFY_TEXT_XPATH = "//TextView[contains(@text,'向右滑动验证')]";
